@@ -1,1 +1,2 @@
  finance mangement system
+ FineBuddy
