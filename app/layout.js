@@ -1,5 +1,14 @@
 import { Inter, Outfit } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner"
 import "./globals.css";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
+// https://dashboard.clerk.com/apps/app_2kabGZKMCFBWT7yAppQulMnUxIT/instances/ins_2kabGXM2IPocoA60LUBLodaZPRV
 
 const inter = Outfit({ subsets: ["latin"] });
 
@@ -10,8 +19,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    // cleark login
+    <ClerkProvider>
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <Toaster />
+      {children}
+      </body>
     </html>
+    </ClerkProvider>
   );
 }
