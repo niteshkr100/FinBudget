@@ -5,7 +5,7 @@ const BudgetTable = ({budgetList, refreshData}) => {
     
     
       useEffect(()=>{ 
-        console.log(budgetList);
+        // console.log(budgetList);
         refreshData()
       }, [budgetList])
     

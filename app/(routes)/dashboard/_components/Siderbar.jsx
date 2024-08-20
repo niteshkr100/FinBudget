@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import {   LayoutDashboard, LayoutGrid, PiggyBank, ReceiptText, ShieldCheck } from 'lucide-react'
 import { UserButton } from '@clerk/nextjs'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import Link from 'next/link'
  
@@ -47,12 +47,14 @@ function Siderbar() {
         path:'/dashboard/upgrade'
     },
   ]
-
-   
+   const route = useRouter();
+   const website = () =>{
+    route.push("/")
+   }
   return (
     <div className='h-screen p-5 border shadow-sm'>
     {/* icon */}
-    <div className='flex items-center'>
+    <div className='flex items-center cursor-pointer' onClick={website}>
       <Image
         src={'/wallet.svg'}
         width={50}

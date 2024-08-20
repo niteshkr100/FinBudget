@@ -21,7 +21,9 @@ const DashboardHeader = ({budgetData}) => {
 
    // Effect to log budgetSearchList changes
    useEffect(() => {
-    console.log("Updated budgetSearchList:", budgetSearchList);
+    // console.log("Updated budgetSearchList:", budgetSearchList);
+    
+    setSearch("")
   }, [budgetSearchList]);
 
 
@@ -29,16 +31,17 @@ const DashboardHeader = ({budgetData}) => {
       const result = budgetData.filter((budget)=>{
         return budget.name.toLowerCase().includes(search.toLowerCase())
       })
-      console.log('Search Result:');
+      // console.log('Search Result:');
   
-      console.log(result);
+      // console.log(result);
       if(result){
         setbudgetSearchList(result);
       }
+      // setbudgetSearchList(result);
+      // console.log(budgetSearchList);
       
-      console.log(budgetSearchList);
-      
-      router.push("/dashboard/search")
+      // Update the URL with the search keyword
+      router.push(`/dashboard/search?query=${encodeURIComponent(search)}`);
   }
   
   return (
@@ -63,10 +66,18 @@ const DashboardHeader = ({budgetData}) => {
       </div>
     </div>
     {/* <BudgetProduct budget={budgetSearchList}/> */}
-     <Displayterm budgetSearchList={budgetSearchList}/>
+     {/* <Displayterm budgetSearchList={budgetSearchList}/> */}
       
     </div>
   )
 }
 
 export default DashboardHeader
+ 
+
+ 
+
+
+
+
+

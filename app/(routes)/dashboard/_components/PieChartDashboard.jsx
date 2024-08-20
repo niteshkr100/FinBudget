@@ -13,7 +13,7 @@ const PieChartDashboard = ({budgetList}) => {
             totalBudget_ = totalBudget_ + Number(element.amount);
             totalSpend_ =  totalSpend_ + element.totalSpend;
           });
-          console.log(totalBudget_, totalSpend_);
+          // console.log(totalBudget_, totalSpend_);
           setTotalBudget(totalBudget_);
           setTotalSpend(totalSpend_);
     }, [budgetList])
