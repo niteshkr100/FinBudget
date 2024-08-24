@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 import Siderbar from "./_components/Siderbar";
 import DashboardHeader from "./_components/DashboardHeader";
