@@ -1,4 +1,4 @@
- 
+ /* eslint-disable react-hooks/exhaustive-deps */
  import React, { useEffect } from 'react'
  
 const BudgetTable = ({budgetList, refreshData}) => {
