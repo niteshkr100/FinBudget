@@ -18,7 +18,7 @@
           
         </div>
         {expensesList.map((expense)=> (
-         <div className='grid grid-cols-3 bg-slate-50 p-2 text-center text-sm sm:text-md'>
+         <div className='grid grid-cols-3 bg-slate-50 p-2 text-center text-sm sm:text-md' key={expense.id}>
          <h2>{expense.name}</h2>
          <h2>${expense.amount}</h2>
          <h2>{expense.createdAt}</h2>

@@ -17,7 +17,7 @@ const BudgetTable = ({budgetList, refreshData}) => {
        
            </div>
            {budgetList.map((budget)=> (
-            <div className='grid grid-cols-2 bg-slate-50 p-2 text-center text-sm sm:text-md'>
+            <div className='grid grid-cols-2 bg-slate-50 p-2 text-center text-sm sm:text-md' key={budget.id}>
             <h2>{budget.name}</h2>
             <h2>${budget.amount}</h2>
             </div>

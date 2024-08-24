@@ -36,7 +36,7 @@ const ExpenseListTable = ({expensesList, refreshData, getBudgetInfo}) => {
         <h2 className='font-bold'>Action</h2>
        </div>
        {expensesList.map((expense)=> (
-        <div className='grid grid-cols-4 bg-slate-50 p-2 text-center text-sm sm:text-md'>
+        <div className='grid grid-cols-4 bg-slate-50 p-2 text-center text-sm sm:text-md' key={expense.id}>
         <h2>{expense.name}</h2>
         <h2>${expense.amount}</h2>
         <h2>{expense.createdAt}</h2>

@@ -7,8 +7,8 @@ import { db } from '@/utils/dbConfig'
 import { desc, eq, getTableColumns, sql } from 'drizzle-orm'
 import { Budgets, Expenses } from '@/utils/schema'
 import { useUser } from '@clerk/nextjs';
-
-const Displayterm = ({ budgetSearchList }) => {
+// { budgetSearchList }
+const Displayterm = () => {
 
   const searchParams = useSearchParams();
   const query = searchParams.get('query') || ''; // Access the query parameter

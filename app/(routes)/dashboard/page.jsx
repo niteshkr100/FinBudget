@@ -15,7 +15,7 @@ import PieChartDashboard from "./_components/PieChartDashboard"
 import BudgetTable from "./_components/BudgetTable"
 
 
-const page = () => {
+const Page = () => {
 
   const [budgetList, setBudgetList] = useState([]);
   const [expenseList, setExpenseList] = useState([]);
@@ -89,4 +89,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

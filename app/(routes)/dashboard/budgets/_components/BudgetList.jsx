@@ -49,7 +49,7 @@ const BudgetList = () => {
    {/* 2 */}
       <CreateBudget refreshData={()=> getBudgetList()}  />
       {budgetList.length > 0 ? ( budgetList.map((budget, index)=>(
-       <BudgetProduct budget={budget}/>
+       <BudgetProduct budget={budget} key={budget.id}/>
       ))
     ): 
     ( [1,2,3,4,5,6].map((item, index)=>(

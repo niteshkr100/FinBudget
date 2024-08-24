@@ -9,7 +9,7 @@ import ExpenseTable from "./_ExpenseTable/ExpenseTable"
 import { useUser } from '@clerk/nextjs'
 import ExpenseTimeChart from "./_ExpenseTable/ExpenseTimeChart"
 
-const page = () => {
+const Page = () => {
     const [expenseList, setExpenseList] = useState([]);
 
     const {user} = useUser();
@@ -49,4 +49,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
