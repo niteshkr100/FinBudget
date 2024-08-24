@@ -9,27 +9,43 @@ const CardInfo = ({budgetList}) => {
     const [totalBudget, setTotalBudget] = useState(0);
     const [totalSpend, setTotalSpend] = useState(0);
 
-    useEffect(()=>{
-        CalculateCardInfo()
+//     useEffect(()=>{
+//         CalculateCardInfo()
      
-    },[budgetList])
+//     },[budgetList])
 
-    //calculate cardInfo data
-   const CalculateCardInfo = () =>{
-        // console.log(budgetList);
+//     //calculate cardInfo data
+//    const CalculateCardInfo = () =>{
+//         // console.log(budgetList);
 
+//     let totalBudget_ = 0;
+//     let totalSpend_ = 0;
+//       budgetList.forEach(element => {
+//         totalBudget_ = totalBudget_ + Number(element.amount);
+//         totalSpend_ =  totalSpend_ + element.totalSpend;
+//       });
+//       console.log(totalBudget_, totalSpend_);
+//       setTotalBudget(totalBudget_);
+//       setTotalSpend(totalSpend_);
+
+//    }
+     
+// calculate cardInfo data
+const CalculateCardInfo = useCallback(() => {
     let totalBudget_ = 0;
     let totalSpend_ = 0;
-      budgetList.forEach(element => {
+    budgetList.forEach((element) => {
         totalBudget_ = totalBudget_ + Number(element.amount);
         totalSpend_ =  totalSpend_ + element.totalSpend;
-      });
-      console.log(totalBudget_, totalSpend_);
-      setTotalBudget(totalBudget_);
-      setTotalSpend(totalSpend_);
+    });
+    setTotalBudget(totalBudget_);
+    setTotalSpend(totalSpend_);
+  }, [budgetList]);
 
-   }
-     
+  useEffect(() => {
+    CalculateCardInfo();
+  }, [budgetList, CalculateCardInfo]);
+
 
   return (
     <div>

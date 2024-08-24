@@ -19,6 +19,7 @@ const BudgetList = () => {
 
   useEffect(()=>{
     user&&getBudgetList();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user])
 
   const getBudgetList = async()=>{
