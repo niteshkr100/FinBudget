@@ -1,12 +1,13 @@
 "use client"
 
- 
+import MobileNav from "./MobileNav"
 import Image from "next/image"
 import {user, isSignedIn, UserButton, useUser} from "@clerk/nextjs"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 // import { Button } from "../../components/ui/button"
  
+
 const Header = () => {
 //clerk hook
   const {user, isSignedIn} = useUser();
@@ -24,6 +25,7 @@ const Header = () => {
       FinBuddy
      </div>
  
+ <div className="flex gap-2">
      {/* check user signIn or not */}
      {isSignedIn?
       <UserButton style={{ height: '50px' }}/> 
@@ -33,7 +35,8 @@ const Header = () => {
         {/* <Button>Get started</Button> */}
       </Link>
      }
-     
+    {/* <MobileNav/> */}
+    </div>
     </div>
   )
 }

@@ -57,7 +57,7 @@ const onUpdateBudget = async() =>{
     {/* open dialog box */}
     <DialogTrigger asChild>
     <Button className="flex items-center gap-2">
-     <PenBox/>Edit
+     <PenBox/><span className="hidden sm:inline">Edit</span>
      </Button>
     </DialogTrigger>
 

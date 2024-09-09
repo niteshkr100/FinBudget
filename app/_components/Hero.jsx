@@ -21,7 +21,7 @@ const Hero = () => {
       <h1 className="text-3xl font-extrabold sm:text-5xl">
         {/* Manage Your Expense */}
         Manage Your Money
-        <strong className="font-extrabold text-primary sm:block">
+        <strong className="font-extrabold text-primary block sm:block">
          {/* Save your Money. */}
          Build Your Wealth
           </strong>

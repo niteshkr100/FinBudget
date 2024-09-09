@@ -6,6 +6,8 @@ import BudgetProduct from "../budgets/_components/BudgetProduct";
 import Displayterm from "../search/page";
 import { useRouter } from "next/navigation";
 import InputTerm from "../search/_components/InputTerm"
+// import MobileNav from "@/app/_components/MobileNav";
+import MobNav from "./MobNav"
 
 const DashboardHeader = ({budgetData}) => {
 
@@ -53,16 +55,18 @@ const DashboardHeader = ({budgetData}) => {
       autoComplete="off"
       type="text"
       placeholder="Search Budget"
-      className="p-2 border text-black rounded-l-md focus:outline-none focus:border-[0.5px] focus:border-slate-500 w-80"
+      className="p-2 border text-black rounded-l-md focus:outline-none focus:border-[0.5px] focus:border-slate-500 w-[60%] lg:w-80 "
       value={search}
        onChange={(e)=>setSearch(e.target.value)}
       />
-      <button onClick={()=>searchTerm()} className="bg-primary text-white p-2 rounded-r-md border-solid border-2 border-indigo-600">Search</button>
+      <button onClick={()=>searchTerm()} className="bg-primary text-white p-1.5 rounded-r-md border-solid border-2 border-indigo-600 lg:p-2">Search</button>
     </div>
 
       </div>
-      <div>
+      <div className="flex">
         <UserButton/>
+         {/* humberger */}
+        <MobNav/>
       </div>
     </div>
     {/* <BudgetProduct budget={budgetSearchList}/> */}

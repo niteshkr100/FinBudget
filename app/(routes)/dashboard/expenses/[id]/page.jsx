@@ -120,7 +120,7 @@ const getBudgetInfo = async()=>{
      <AlertDialog>
         <AlertDialogTrigger asChild>
         <Button className="flex gap-2" variant="destructive">
-        <Trash/>Delete
+        <Trash/> <span className="hidden sm:inline">Delete</span>
         </Button>
         </AlertDialogTrigger>
         <AlertDialogContent>
