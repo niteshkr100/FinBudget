@@ -5,7 +5,9 @@ import Image from "next/image"
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
- 
+import Footer from "./Footer";
+import Foot from "./Foot"
+
 const Hero = () => {
 
 //  const route = useRouter();
@@ -66,8 +68,10 @@ const Hero = () => {
     width={1000}
     height={700}
     alt="dashbord"
-    className="mt-0 rounded-xl border-2 sm:mt-5"
+    className="mt-0 rounded-xl border-2  mb-1 sm:mt-5"
   />
+  <Footer/>
+  <Foot/>
 </section>
   )
 }
