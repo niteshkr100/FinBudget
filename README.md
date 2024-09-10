@@ -3,7 +3,7 @@
 1. Clone the repo
 
 ```sh
-git clone https://github.com/niteshkr100/videoplayer.git
+git clone https://github.com/niteshkr100/FinBudget.git
 ```
 
 2. Directory of folder
