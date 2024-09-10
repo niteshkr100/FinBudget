@@ -8,7 +8,7 @@ git clone https://github.com/niteshkr100/FinBudget.git
 
 2. Directory of folder
 ```sh
-cd videoplayer
+cd <folderName>
 ```
 
 ## Before Getting Started download node module
