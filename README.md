@@ -51,6 +51,6 @@ for running the webapp----->
 ```sh
 npm run dev
 ```
-## To use Subtitle features click on Get Started in the Home page of website
-it is a 2 page website 
+## for website url email me at niteshkumarxyz100@gmail.com
+ 
  
