@@ -1,14 +1,22 @@
  /* eslint-disable react-hooks/exhaustive-deps */
  import React, { useEffect } from 'react'
  
+
+
  const ExpenseTable = ({expensesList, refreshData}) => {
-     
+
+ 
      
        useEffect(()=>{ 
         //  console.log(expensesList);
          refreshData()
        }, [expensesList])
      
+
+    
+
+  
+
        return (
         <div className='mt-7 border rounded-lg hover:shadow-md'>
         <div className='grid grid-cols-3 bg-slate-200 p-2 text-center text-sm sm:text-md'>
@@ -31,3 +39,5 @@
  
  export default ExpenseTable
  
+ 
+  

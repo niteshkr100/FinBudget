@@ -32,6 +32,7 @@ const ExpensesUi = ( {params}) => {
 
  const [budgetInfo, setBudgetInfo] = useState();
  const [expensesList, setExpensesList] = useState([]);
+ 
 
   //user from clerk
   const {user} = useUser();
@@ -156,7 +157,9 @@ const getBudgetInfo = async()=>{
      <div className="mt-4">
         <h2 className="font-bold text-lg">Latest Expense</h2>
         {expensesList?.length > 0 ? 
-        (<ExpenseListTable expensesList={expensesList} refreshData={()=>getBudgetInfo()} getBudgetInfo={getBudgetInfo}/>)
+        ( 
+          <ExpenseListTable expensesList={expensesList} refreshData={()=>getBudgetInfo()} getBudgetInfo={getBudgetInfo}/>
+        )
         :
         (<img src={'https://cdni.iconscout.com/illustration/premium/thumb/expense-managing-app-illustration-download-in-svg-png-gif-file-formats--management-budget-accounting-business-concept-pack-illustrations-3561011.png?f=webp'}
             width={"50%"}
