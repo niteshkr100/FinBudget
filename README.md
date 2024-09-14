@@ -10,21 +10,21 @@ This project will involve the development of a "Finance Management Applicationâ€
 4. Expense Management:Add, edit, and delete expense entries. Categorize expenses (e.g.,groceries, bills, entertainment).
 
 ### Tech Stack:
-Next.js, 
+Next.js
 
-React.js,
+React.js
 
-Node.js, 
+Node.js
 
-Shadcn UI,
+Shadcn UI
 
-Tailwind Css, 
+Tailwind Css
 
-Drizzle,
+Drizzle
 
-Neon, 
+Neon
 
-PostgreSQL.
+PostgreSQL
 
 
 
