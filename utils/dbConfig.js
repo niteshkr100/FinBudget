@@ -5,7 +5,7 @@ import { drizzle } from 'drizzle-orm/neon-http';
 import * as schema from './schema'
 import { neon } from '@neondatabase/serverless';
 
-const sql =  neon("postgresql://neondb_owner:4t6pOZBqSULH@ep-bitter-mode-a5th27gs.us-east-2.aws.neon.tech/neondb?sslmode=require")
+const sql =  neon(process.env.NEXT_PUBLIC_POSTGRES_DATABASE_URL)
 
 // pass schema model from utils schema.js
 export const db = drizzle(sql, { schema });
