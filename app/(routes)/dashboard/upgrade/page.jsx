@@ -1,3 +1,4 @@
+import Form2 from '@/app/_components/Form2'
 import React from 'react'
 
 const page = () => {
@@ -391,18 +392,8 @@ const page = () => {
 </div>
 
 
-{/*  */}
-
-{/*
-  Heads up! 👋
-
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-
-  Plugins:
-    - @tailwindcss/forms
-*/}
-
-<section className="bg-gray-50">
+ 
+{/* <section className="bg-gray-50">
   <div className="p-8 md:p-12 lg:px-16 lg:py-24">
     <div className="mx-auto max-w-lg text-center">
       <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
@@ -414,7 +405,7 @@ const page = () => {
       </p>
     </div>
 
-    <div className="mx-auto mt-8 max-w-xl">
+    {/* <div className="mx-auto mt-8 max-w-xl">
       <form action="#" className="sm:flex sm:gap-4">
         <div className="sm:flex-1">
           <label htmlFor="email" className="sr-only">Email</label>
@@ -448,10 +439,11 @@ const page = () => {
           </svg>
         </button>
       </form>
-    </div>
-  </div>
-</section>
+    </div> */}
     
+  {/* </div>
+</section> */}  
+<Form2/>
 
 
   </div>

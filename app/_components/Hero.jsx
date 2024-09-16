@@ -71,7 +71,7 @@ const Hero = () => {
     className="mt-0 rounded-xl border-2  mb-1 sm:mt-5"
   />
   <Footer/>
-  <Foot/>
+  {/* <Foot/> */}
 </section>
   )
 }

@@ -1,10 +1,41 @@
+"use client"
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'sonner'; 
  
 
 const Foot = () => {
+
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+      // Send email only if form is valid
+      emailjs.sendForm(
+        process.env.NEXT_PUBLIC_YOUR_SERVICE_ID, 
+        process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID, 
+        form.current, 
+        process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY
+      ).then(
+        () => {
+          console.log('SUCCESS!');
+          // Clear form fields after submission
+          form.current.reset();
+          toast("Subsrcibed!")
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          toast("Failed to Subsrcibed!")
+        }
+      );
+ 
+  };
+
   return (
-    <div>
+  <div>
 
 <footer className="bg-white">
   <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
@@ -32,21 +63,22 @@ const Foot = () => {
         </div>
 
         <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
-          <form className="w-full">
+          <form ref={form} onSubmit={handleSubmit} className="w-full">
             <label htmlFor="UserEmail" className="sr-only"> Email </label>
 
             <div
-              className="border border-gray-100 p-2 focus-within:ring sm:flex sm:items-center sm:gap-4"
+              className="flex"
             >
               <input
                 type="email"
+                name='email'
                 id="UserEmail"
                 placeholder="nk@gmail.com"
-                className="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm"
+                className="w-full border p-3 focus:border-transparent focus:ring-transparent sm:text-sm"
               />
 
               <button
-                className="mt-1 w-full rounded bg-primary px-6 py-3 text-sm  text-semibold tracking-wide text-white transition-none hover:bg-primary sm:mt-0 sm:w-auto sm:shrink-0"
+                className="p-5  border rounded bg-primary text-sm  text-semibold tracking-wide text-white transition-none hover:bg-primary sm:mt-0 sm:w-auto sm:shrink-0"
               >
                 Subsrcibe
               </button>
