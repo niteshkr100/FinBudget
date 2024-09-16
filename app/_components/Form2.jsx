@@ -66,7 +66,7 @@ import { toast } from 'sonner';
         (error) => {
           console.log('FAILED...', error.text);
           setLoader(false);//to show downloading
-          toast("Failed to send!")
+          toast("under maintaince!")
         }
       );
     }
