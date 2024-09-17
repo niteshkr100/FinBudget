@@ -8,6 +8,7 @@ This project will involve the development of a "Finance Management Applicationâ€
 2. Display a summary of financial status, including total income, expenses, and savings.
 3. Provide graphical representation of expenses over time, using pie charts, bar graphs, etc.
 4. Expense Management:Add, edit, and delete expense entries. Categorize expenses (e.g.,groceries, bills, entertainment).
+5. Contact form for user supports.
 
 ### Tech Stack:
 Next.js
