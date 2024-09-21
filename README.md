@@ -21,6 +21,8 @@ Shadcn UI
 
 Tailwind Css
 
+Material UI
+
 Drizzle
 
 Neon
