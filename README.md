@@ -24,6 +24,12 @@ Tailwind Css
 
 Material UI
 
+HTML
+
+Css
+
+Javascript
+
 Drizzle
 
 Neon
