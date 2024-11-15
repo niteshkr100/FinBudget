@@ -12,33 +12,33 @@ This project will involve the development of a "Finance Management Applicationâ€
 5. Contact form for user supports.
 
 ### Tech Stack:
-Next.js
+  Next.js
 
-React.js
+  React.js
 
-Node.js
+  Node.js
 
-Shadcn UI
+  Shadcn UI
 
-Tailwind Css
+  Tailwind Css
 
-Material UI
+  Material UI
 
-HTML
+  HTML
 
-Css
+  Css
 
-Javascript
+  Javascript
 
-Drizzle
+  Drizzle
 
-Neon
+  Neon
 
-PostgreSQL
+  PostgreSQL
 
-Rechart
+  Rechart
 
-Clerk
+  Clerk
 
 
 ## ðŸ’µ How to Contribute
