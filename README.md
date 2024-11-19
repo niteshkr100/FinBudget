@@ -41,7 +41,7 @@ This project will involve the development of a "Finance Management Applicationâ€
   Clerk
 
 
-## ðŸ’µ How to Contribute
+## How to Contribute
 
    #### 1. Fork the repository to your GitHub account.
    #### 2. Clone the forked repository to your local machine.
