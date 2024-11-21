@@ -63,6 +63,26 @@ This project will involve the development of a "Finance Management Applicationâ€
    git push origin feature/your-feature
    ```
    #### 7. Open a Pull Request (PR) against the main repository.
+   
 
- 
+## How to make changes if pull request is done and you want to make changes in currrent PR
+
+ #### 1. Check current branch is correctly in which through PR is done
+   ```bash
+   git branch
+   ```
+#### 2. Makes the changes to the file you want and then save
+#### 3. Add the change file
+   ```bash
+   git add <file name>
+   ```
+#### 4. Add comments to the file
+   ```bash
+   git commit -m "file is change"
+   ```
+#### 5. Push the changes to the repo
+   ```bash
+   git push origin <branch-name> 
+   ```
+    
  
