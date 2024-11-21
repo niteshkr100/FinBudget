@@ -67,7 +67,7 @@ This project will involve the development of a "Finance Management Applicationâ€
 
 ## How to make changes if pull request is done and you want to make changes in currrent PR
 
- #### 1. Check current branch is correctly in which through PR is done
+ #### 1. Check current branch correctly through  which PR is done
    ```bash
    git branch
    ```
