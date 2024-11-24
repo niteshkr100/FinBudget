@@ -40,6 +40,8 @@ This project will involve the development of a "Finance Management Applicationâ€
 
   Clerk
 
+  Rechart.js
+
 
 ## How to Contribute
 
