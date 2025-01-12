@@ -1,4 +1,4 @@
-## If you clone the repo please mark with Stars🌟!
+## If you clone the repo please mark with Stars🌟
 
 ### FinBuddy (Finanace Management webApp)
 This project will involve the development of a "Finance Management Application”
